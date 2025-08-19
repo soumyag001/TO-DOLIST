@@ -16,6 +16,7 @@ You can add tasks, mark them as completed, and delete them when done.
 
 ## 📂 Project Structure
 ├── index.html # Main HTML file
+
 ├── style.css # Styling for the app
 
 ---
