@@ -22,7 +22,7 @@ You can add tasks, mark them as completed, and delete them when done.
 
 ## ▶️ How to Run
 1. Visit the live demo hosted on **GitHub Pages**:  
-   👉 [Live App Link](https://github.com/soumyag001/TO-DOLIST.git)  
+   👉 [Live App Link](https://soumyag001.github.io/TO-DOLIST/ )  
 2. Start adding your tasks ✅
 
 ---
