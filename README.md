@@ -22,15 +22,14 @@ You can add tasks, mark them as completed, and delete them when done.
 
 ## ▶️ How to Run
 1. Visit the live demo hosted on **GitHub Pages**:  
-   👉 [Your Live App Link]()  
+   👉 [Live App Link](https://github.com/soumyag001/TO-DOLIST.git)  
 2. Start adding your tasks ✅
 
 ---
 
 ## 📸 Screenshot
-## 📸 Screenshot
 
 Here’s how the ToDo App looks:
 
-![App Screenshot]()
+![App Screenshot](Screenshot.png)
 
