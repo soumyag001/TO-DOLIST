@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ToDo App</h1>
+    <div class="inputs">
+      <input type="text" placeholder="Enter Your Task" id="inp">
+      <button onclick="Add()">Add</button>
+    </div>
+    <div class="text"></div>
+  </div>
+
+  <script>
+    let inputs = document.getElementById("inp");
+    let text = document.querySelector(".text");
+
+    // Function to add a new task
+    function Add() {
+      if (inputs.value == "") {
+        alert("Please Enter Task");
+      } else {
+        // Create list element
+        let newEle = document.createElement("ul");
+
+        // Create list item with checkbox, task text, and delete button
+        newEle.innerHTML = `
+          <li>
+            <input type="checkbox" class="check">
+            <span>${inputs.value}</span>
+            <button class="delete-btn">Delete</button>
+          </li>
+        `;
+
+        // Append new task to task container
+        text.appendChild(newEle);
+        inputs.value = "";
+
+        // Add event listener for delete button
+        newEle.querySelector(".delete-btn").addEventListener("click", function() {
+          newEle.remove();
+        });
+
+        // Add event listener for checkbox (toggle completed style)
+        newEle.querySelector(".check").addEventListener("change", function(e) {
+          let taskItem = newEle.querySelector("li");
+          if (e.target.checked) {
+            taskItem.classList.add("completed");
+          } else {
+            taskItem.classList.remove("completed");
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
